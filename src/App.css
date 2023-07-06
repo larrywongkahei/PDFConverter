@@ -7,6 +7,110 @@
   pointer-events: none;
 }
 
+.uploadedData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploadedData p{
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+}
+
+
+.uploadIntroduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.uploadButton {
+  padding: .6rem 1rem .6rem 1rem;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #a0a07d;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrowDown {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+.downloadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#download {
+  height: 18rem;
+  width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: #f5f5f5;
+  flex-direction: column;
+}
+
+#download p {
+  font-size: 22px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imageIcon {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pdfIcon {
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+#label-file-upload {
+  height: 18rem;
+  width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+#inputFile {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
