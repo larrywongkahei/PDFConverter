@@ -14,7 +14,7 @@ function App() {
   function handleToPdf(){
     let formData = new FormData();
     formData.append("file", data)
-    fetch("http://localhost:8080/image/image", {
+    fetch("https://converter-backend-084d4bea07f3.herokuapp.com/image/image", {
       method:"POST",
       body:formData
     }).then(
