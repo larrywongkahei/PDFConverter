@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PDFConverter/static/css/main.d06257ab.css",
-    "main.js": "/PDFConverter/static/js/main.6f601bee.js",
+    "main.js": "/PDFConverter/static/js/main.d6673497.js",
     "static/js/787.4110ad9e.chunk.js": "/PDFConverter/static/js/787.4110ad9e.chunk.js",
     "static/media/logo.svg": "/PDFConverter/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/PDFConverter/index.html",
     "main.d06257ab.css.map": "/PDFConverter/static/css/main.d06257ab.css.map",
-    "main.6f601bee.js.map": "/PDFConverter/static/js/main.6f601bee.js.map",
+    "main.d6673497.js.map": "/PDFConverter/static/js/main.d6673497.js.map",
     "787.4110ad9e.chunk.js.map": "/PDFConverter/static/js/787.4110ad9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d06257ab.css",
-    "static/js/main.6f601bee.js"
+    "static/js/main.d6673497.js"
   ]
 }
