@@ -6,6 +6,7 @@ import { faFilePdf, faImage, faArrowDown } from '@fortawesome/free-solid-svg-ico
 function App() {
 
   const [data, setData] = useState();
+  const baseUrl = "https://converter-backend-084d4bea07f3.herokuapp.com"
 
   function handleUpload(){
     document.getElementById('inputFile').click();
@@ -14,7 +15,7 @@ function App() {
   function handleToPdf(){
     let formData = new FormData();
     formData.append("file", data)
-    fetch("https://converter-backend-084d4bea07f3.herokuapp.com/image/image", {
+    fetch(`${baseUrl}/image/image`, {
       method:"POST",
       body:formData
     }).then(
