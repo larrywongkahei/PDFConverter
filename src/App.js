@@ -6,6 +6,7 @@ import { faFilePdf, faImage, faArrowDown } from '@fortawesome/free-solid-svg-ico
 function App() {
 
   const [data, setData] = useState();
+  const [showLoading, setShowLoading] = useState(false);
   const baseUrl = "https://converter-backend-084d4bea07f3.herokuapp.com"
 
   function handleUpload(){
