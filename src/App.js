@@ -66,7 +66,7 @@ function App() {
             </p>
           </div> : 
           <p>
-            Drag and frop your file here or
+            Drag and frop your image here or
           </p> }
           <button onClick={handleUpload} className='uploadButton'>Upload</button>
           <p>
