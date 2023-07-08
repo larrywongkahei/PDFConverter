@@ -71,7 +71,7 @@ function App() {
       <FontAwesomeIcon icon={faArrowDown} className='arrowDown' />
       <div id='download'>
         <p>
-          Download
+          Convert and Download
         </p>
       <FontAwesomeIcon icon={faFilePdf} className='pdfIcon' onClick={handleToPdf}/>
       </div>
