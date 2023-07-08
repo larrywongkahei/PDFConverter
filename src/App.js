@@ -3,10 +3,12 @@ import './App.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf, faImage, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import ReactLoading from "react-loading" 
+
 function App() {
 
   const [data, setData] = useState();
-  const [showLoading, setShowLoading] = useState(false);
+  const [showLoading, setShowLoading] = useState(true);
   const baseUrl = "https://converter-backend-084d4bea07f3.herokuapp.com"
 
   function handleUpload(){
@@ -14,6 +16,7 @@ function App() {
   }
 
   function handleToPdf(){
+    setShowLoading(!showLoading);
     let formData = new FormData();
     formData.append("file", data)
     fetch(`${baseUrl}/image/image`, {
@@ -25,9 +28,11 @@ function App() {
         link.setAttribute('download', 'ImageToPdf')
         link.href = URL.createObjectURL(dataToUrl);
         link.click();
+        setShowLoading(!showLoading);
       })}
     )
   }
+  console.log(showLoading)
 
   function handleData(e){
     setData(e.target.files[0])
@@ -44,6 +49,11 @@ function App() {
 
   return (
     <div className='container'>
+       {showLoading ? (
+            <div className='loadingContainer'>
+              <ReactLoading
+          type={"bars"} height={100} width={100} color={"lightgreen"} className='loading'/>
+              </div> ) : null }
       <div id='label-file-upload'  onDrop={handleDrop} onDragOver={handleDragOver}>
         <div className='uploadIntroduction'>
           <input type='file' id='inputFile' onChange={handleData} accept='image/*'/>
