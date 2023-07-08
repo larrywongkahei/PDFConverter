@@ -8,7 +8,7 @@ import ReactLoading from "react-loading"
 function App() {
 
   const [data, setData] = useState();
-  const [showLoading, setShowLoading] = useState(true);
+  const [showLoading, setShowLoading] = useState(false);
   const baseUrl = "https://converter-backend-084d4bea07f3.herokuapp.com"
 
   function handleUpload(){
@@ -27,13 +27,11 @@ function App() {
         const link = document.createElement('a');
         link.setAttribute('download', 'ImageToPdf')
         link.href = URL.createObjectURL(dataToUrl);
+        setShowLoading(false);
         link.click();
-        setShowLoading(!showLoading);
       })}
     )
   }
-  console.log(showLoading)
-
   function handleData(e){
     setData(e.target.files[0])
   }
