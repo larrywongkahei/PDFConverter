@@ -10,6 +10,9 @@ I got this idea when I was building other showcase projects, I thought it would 
 
 To use the PDF converter, you would just need to upload a file or drag and drop in the field and you are good to download the PDF file!
 
+## Redirect
+<a href="https://larrywongkahei.github.io/PDFConverter/">To the page</a>
+
 ## Other
 
 For more informations, please email makemak123@gmail.com
